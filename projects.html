@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel · Seamus Coyne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-projects">
+    <header class="site-header">
+        <div class="wrap header-row">
+            <a class="brand" href="index.html">Seamus Coyne</a>
+            <nav aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a class="active" href="projects.html" aria-current="page">Travel</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <h1>Travel</h1>
+            <p class="lede">Days on the ground, not cities on a list.</p>
+
+            <article class="travel-copy">
+                <img src="assets/me.JPG" alt="A candid photograph of Seamus Coyne, the kind of frame he keeps from being out.">
+                <div>
+                    <h2>Croatia, then Belgium</h2>
+                    <p>I care more about staying in a place than about collecting cities. The two trips that set that were Northeastern Dialogue of Civilizations programs. Croatia came first. Belgium came after, and it lasted longer.</p>
+                    <p>Croatia was the summer of 2023. The course was cross-cultural psychology, taught through the wars in the former Yugoslavia, with time in Bosnia as well. We met people at NGOs and historical centers who work on memory and reconciliation. I walked more than I studied. Stone, coast, bus windows. Thirty days sounds short when I say it now. It did not feel short while I was there.</p>
+                    <p>Belgium was the summer of 2024. Sixty-four days. The subject was data and software inside international governance. We heard from officials at NATO, Eurostat, and the European Parliament about how an institution actually uses a dataset. I had a grocery store. That is the difference a second month makes. The photographs from Brussels are quieter than the ones from the coast, and I trust them more.</p>
+                    <p>Around those summers I have taken four week-long trips: Spain, Denmark, the Netherlands, and Italy. Seven days each. A week is a different kind of looking. You do not learn the train schedule. You do learn which hour the street is empty, and you shoot like you will not be back. The chart is only the count. Filled bars are the Dialogue summers. Open bars are the weeks. Together they are 122 days.</p>
+                    <h2>Where I would send someone</h2>
+                    <ul class="checks">
+                        <li>Croatia, summer 2023 — Dialogue of Civilizations, 30 days.</li>
+                        <li>Belgium, summer 2024 — Dialogue of Civilizations, 64 days.</li>
+                        <li>Italy — one week.</li>
+                        <li>Spain — one week.</li>
+                        <li>The Netherlands — one week.</li>
+                        <li>Denmark — one week.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <figure class="chart-card">
+                <figcaption>
+                    <strong>Days spent in each country.</strong>
+                    Filled bars are Dialogue of Civilizations summers. Open bars are a week each. Hover a bar to read the stay.
+                </figcaption>
+                <svg id="chart" role="img" aria-label="Horizontal bar chart of days spent in six countries. Belgium is longest, at 64 days."></svg>
+                <p id="chart-note">Belgium is the longest stay, at 64 days.</p>
+                <p id="chart-fallback" class="fallback" hidden>The chart could not be drawn. The list above still has the same six stays.</p>
+                <div class="chart-actions">
+                    <button type="button" id="sort-value">Sort by days</button>
+                    <button type="button" id="sort-name">Sort A–Z</button>
+                </div>
+            </figure>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="interactivity.js"></script>
+</body>
+</html>
